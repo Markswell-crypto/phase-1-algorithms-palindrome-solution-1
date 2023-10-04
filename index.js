@@ -1,22 +1,11 @@
 function reverseString(word) {
-  // Write your algorithm here
-  const wordArray = word.split("");
-  // reverse the array
-  const reversedWordArray = wordArray.reverse();
-  // create a string from the reversed array
-  const reversedWord = reversedWordArray.join("");
-  // return the reversed string
-  return reversedWord;
+  return word.split("").reverse().join("");
 }
 function isPalindrome(word) {
-  // reverse the input string
-  const reversedWord = reverseString(word);
-  // if the reversed string is the same as the input
-  if (word === reversedWord) {
-    return true;
-  } else {
-    return false;
-  }
+   // reverse the input string
+   const reversedWord = reverseString(word);
+   // compare the reversed string to the input
+   return word === reversedWord;
 }
 /* 
   Add your pseudocode here
